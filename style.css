@@ -1,0 +1,22 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 8fr 4fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header header"
+      "game-container game-container game-container game-container"
+      "leaderboard leaderboard AI-stats AI-stats"
+      "footer footer footer footer";
+  }
+  
+  .header { grid-area: header; }
+  
+  .footer { grid-area: footer; }
+  
+  .game-container { grid-area: game-container; }
+  
+  .leaderboard { grid-area: leaderboard; }
+  
+  .AI-stats { grid-area: AI-stats; }
+  
